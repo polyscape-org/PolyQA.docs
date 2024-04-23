@@ -1,7 +1,12 @@
+---
+sidebar_position: 1
+---
+
 # Unity への組み込み
 
 ## unitypackageのImport
-Licence契約後、送らせてもらった物の中から「**PolyQA.unitypackage**」をUnityプロジェクトにインポートしてください。
+- Licence契約後、送らせてもらった物の中から「**PolyQA.unitypackage**」をUnityプロジェクトにインポートしてください。
+    - [このリンク](https://drive.google.com/file/d/1zq_bRUsBa35GV-SCv8Mg1slHGTOMWmmz/view?usp=drive_link)が開ける方はこちらからダウンロードしてください。
 
 ### Import方法
 
@@ -9,16 +14,16 @@ Unity Editorのメニューバーから以下のように進んで選んでく�
 
 「Assets」-> 「Import Package」 -> 「Custom Package...」
 
-![Menu Path Image](image.png)
+![Menu Path Image](./img/image.png)
 
 ## DataSenderMonoBehaviour の登録
 
 - TitleScene等の、起動後一番最初に読み込まれるGameObjectがあるシーンで、空のゲームオブジェクトを作成してください。
-![create empty gameobject](image-1.png)
+![create empty gameobject](./img/image-1.png)
 - 作成されたゲームオブジェクトに「DataSender」と名前をつけてください。
 - ゲームオブジェクトに、「DataSenderMonoBehaviour」コンポーネントをAddComponentしてください。
-![add component datasender menu](image-2.png)
-![datasender component](image-3.png)
+![add component datasender menu](./img/image-2.png)
+![datasender component](./img/image-3.png)
 - この状態で[PolyQA.App](../app/get-started)を起動後、UnityEditorの再生を行ってみてください。[PolyQA.App](../app/get-started)の方にデータが送られていたら正しく設定されています。
     - ライセンス形式によってAppが提供されてない場合はこの工程はスキップしてください。
 
@@ -31,6 +36,8 @@ Unity Editorのメニューバーから以下のように進んで選んでく�
     - 第二引数　value : any type
         - 対応済みTypeは、「string int float bool Vector2 Vector3 Vector4 Quaternion Color byte sbyte short ushort uint long ulong double」
         - 実際に送られるデータになります。
-    - ![datasend txt](image-4.png)
+    - ![datasend txt](./img/image-4.png)
 
     
+## トラブルシューティング
+- WIP
