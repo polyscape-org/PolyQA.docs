@@ -1,3 +1,7 @@
 # PolyQA.App
 
-Appの方のGettingstarted
+:::info
+
+WIP
+
+:::

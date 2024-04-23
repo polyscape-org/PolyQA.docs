@@ -32,3 +32,5 @@ Unity Editorのメニューバーから以下のように進んで選んでく�
         - 対応済みTypeは、「string int float bool Vector2 Vector3 Vector4 Quaternion Color byte sbyte short ushort uint long ulong double」
         - 実際に送られるデータになります。
     - ![datasend txt](image-4.png)
+
+    
