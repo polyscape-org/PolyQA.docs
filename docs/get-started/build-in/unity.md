@@ -24,7 +24,7 @@ Unity Editorのメニューバーから以下のように進んで選んでく�
 - ゲームオブジェクトに、「DataSenderMonoBehaviour」コンポーネントをAddComponentしてください。
 ![add component datasender menu](./img/image-2.png)
 ![datasender component](./img/image-3.png)
-- この状態で[PolyQA.App](../app/get-started)を起動後、UnityEditorの再生を行ってみてください。[PolyQA.App](../app/get-started)の方にデータが送られていたら正しく設定されています。
+- この状態で[PolyQA.App](../app/1_install.md)を起動後、UnityEditorの再生を行ってみてください。[PolyQA.App](../app/1_install.md)の方にデータが送られていたら正しく設定されています。
     - ライセンス形式によってAppが提供されてない場合はこの工程はスキップしてください。
 
 ## DataSendの呼び出し
