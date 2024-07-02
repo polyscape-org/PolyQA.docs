@@ -11,7 +11,7 @@ PolyQAを使用するためには、ゲームとの接続に使用するネッ�
 PolyQAに接続するためにいくつかの起動方法を用意しています。
 環境に合わせてご利用できる起動方法を使用してください。
 
-## 自動接続
+## 方法１：自動接続
 
 ローカルネットワーク内からPolyQAを検索して接続しますので、まずはそのまま起動してください。
 
@@ -20,7 +20,7 @@ PolyQAに接続するためにいくつかの起動方法を用意していま�
 その場合、この機能は利用できませんので、他の起動方法を使用してください
 :::
 
-## QRコードで起動する
+## 方法２：QRコードで起動する
 
 PolyQAの「Config」画面でゲームの起動URL（Deep Link）を設定してください。
 
@@ -42,20 +42,14 @@ Android標準のカメラアプリですと、読み取ったURLからゲーム�
 一度アンインストールした場合は、再度QRコードから起動する必要があります。
 :::
 
-## adbコマンドで起動する
+## 方法３：adbコマンドで起動する
 
-- adbコマンドを使用して、インテント引数にIPアドレスを設定して起動します。
+- adbコマンドを使用して、*polyqa_address*というインテント引数にIPアドレスを設定して起動します。
 - adbコマンドでUnityアプリを起動する方法は下記となります。
 
 ```
-adb shell am start -n <パッケージ名>/<アクティビティ名>
+adb shell am start -n <パッケージ名>/<アクティビティ名> --es "polyqa_address" <PolyQA起動端末のIPアドレス>
 ```
-
-:::info 例
-`adb shell am start -n com.HogeCompany.HogeProduct/com.unity3d.player.UnityPlayerActivity`
-:::
-
-- *polyqa_address*という引数にIPアドレスを設定して呼び出します
 
 :::info 例
 `adb shell am start -n com.HogeCompany.HogeProduct/com.unity3d.player.UnityPlayerActivity --es "polyqa_address" 192.168.10.8`
